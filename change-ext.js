@@ -10,7 +10,7 @@ if (lowercased == "single") {
     var directory = prompt('What is the directory of the file you want to change the extension of? ')
     var extension = prompt('What is the extension you want to change the file to? ')
     if (extension.includes(".")) {
-        var change_ext = directory.substr(0, directory.indexOf('.')) + extension
+        var change_ext = directory.substr(0, directory.lastIndexOf('.')) + extension
         var new_path = change_ext
         var old_path = directory
         fs.rename(old_path, new_path, (err) => {
@@ -20,7 +20,7 @@ if (lowercased == "single") {
         }
     else {
         var dot_ext = "." + extension
-        var change_ext = directory.substr(0, directory.indexOf('.')) + dot_ext
+        var change_ext = directory.substr(0, directory.lastIndexOf('.')) + dot_ext
         var new_path = change_ext
         var old_path = directory
         fs.rename(old_path, new_path, (err) => {
@@ -36,7 +36,7 @@ else {} if (lowercased == "several") {
     if (extension.includes(".")) {
         fs.readdir(directory, (_err, _files) => {
             _files.forEach(_files => {
-                var change_ext = _files.substr(0, _files.indexOf('.')) + extension
+                var change_ext = _files.substr(0, _files.lastIndexOf('.')) + extension
                 var new_path = directory + change_ext
                 var old_path = directory + _files
                 fs.rename(old_path, new_path, (err) => {
@@ -49,7 +49,7 @@ else {} if (lowercased == "several") {
         fs.readdir(directory, (_err, _files) => {
             _files.forEach(_files => {
                 var dot_ext = "." + extension
-                var change_ext = _files.substr(0, _files.indexOf('.')) + dot_ext
+                var change_ext = _files.substr(0, _files.lastIndexOf('.')) + dot_ext
                 var new_path = directory + change_ext
                 var old_path = directory + _files
                 fs.rename(old_path, new_path, (err) => {
