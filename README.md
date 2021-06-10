@@ -1,2 +1,2 @@
 # file-extension-changer
-**This javascript file requires prompt-sync**  |  npm i prompt-sync
+**This requires prompt-sync**  |  npm i prompt-sync
