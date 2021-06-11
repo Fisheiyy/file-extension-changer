@@ -1,14 +1,17 @@
 {
   "main": "change-ext.js",
   "name": "file-extension-changer",
-  "description": "change files extensions",
+  "description": "change files extensions.",
   "version": "1.1.0",
-  "keywords": [ "demo", "node-webkit" ],
   "author": "fisheiyy",
   "dependencies": {
     "prompt-sync": "4.2.0"
   },
-  "webkit": {
-    "plugin": true
+"repositories": [
+      {
+            "type": "git", 
+            "url": "github.com/Fisheiyy/file-extension-changer"
+      }
+  ]
   }
 }
