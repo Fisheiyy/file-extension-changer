@@ -6,7 +6,6 @@ var multi_file = prompt('Are you changing the extension of Several Files in a fo
 var lowercased = multi_file.toLowerCase();
 if (lowercased == "single") {
     var error = 1
-    console.log(error)
     var directory = prompt('What is the directory of the file you want to change the extension of? ')
     var extension = prompt('What is the extension you want to change the file to? ')
     if (extension.includes(".")) {
