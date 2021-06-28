@@ -1,2 +1,2 @@
-node change-ext.js
+node changer.js
 pause

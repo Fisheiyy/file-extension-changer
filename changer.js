@@ -1,6 +1,7 @@
 const prompt = require('prompt-sync')();
 const fs = require('fs');
-var error = 0
+
+var error = 0 
 while (error == 0) {
 var multi_file = prompt('Are you changing the extension of Several Files in a folder or a Single File? ');
 var lowercased = multi_file.toLowerCase();

@@ -1,2 +1,2 @@
 # File Extension Changer
-**This file requires prompt-sync**  |  npm i prompt-sync
+File Extension Changer requires Node 14.5.0+ but it is recommended to use the latest version of Node 14
