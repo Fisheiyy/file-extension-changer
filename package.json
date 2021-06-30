@@ -2,7 +2,7 @@
   "main": "changer.js",
   "name": "file-extension-changer",
   "description": "change files extensions.",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "author": "fisheiyy",
   "dependencies": {
     "fs-extra": "^10.0.0",
